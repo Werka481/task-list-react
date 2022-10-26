@@ -5,6 +5,15 @@ This repository contains an application that creates a task list.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Demo
+https://werka481.github.io/task-list-react/
+
+## Technologies used:
+1. BEM
+2. CSS Flex-box
+3. CSS Grid
+4. ES6+ features
+
 ## Available Scripts
 
 In the project directory, you can run:
