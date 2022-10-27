@@ -1,4 +1,6 @@
 # Task list
+
+![share](public/taskshare.png)
 ## Description
 
 This repository contains an application that creates a task list.
