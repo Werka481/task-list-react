@@ -1,4 +1,5 @@
-.taskButton {
+.container__button {
+
     background-color: #fff;
     padding: 10px;
     font-size: 15px;
@@ -7,19 +8,26 @@
     transition: 1s;
 }
 
-.taskButton:hover {
+@media (max-width: 767px) {
+    .container {
+        display: grid;
+        align-items: center;
+    }
+}
+
+.container__button:hover {
     color: hsl(180, 100%, 40%);
 }
 
-.taskButton:active {
+.container__button:active {
     color: hsl(180, 100%, 55%);
 }
 
-.taskButton:disabled {
+.container__button:disabled {
     color: #ccc;
 }
 
-.taskButton--hidden {
+.container__button--hidden {
     background-color: #fff;
     border: none;
     padding: 0px;

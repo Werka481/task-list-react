@@ -7,7 +7,27 @@
     list-style-type: none;
 }
 
-.list--hidden {
+.list__item {
+    display: grid;
+    grid-template-rows: 35px;
+    grid-template-columns: 1fr 14fr 1fr;
+    grid-row-gap: 12px;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 767px) {
+    .list__item {
+        display: grid;
+        grid-template-rows: auto;
+        justify-content: center;
+        word-break: break-word;
+        padding: 15px;
+    }
+}
+
+.list__item--hidden {
     display: none;
 }
 
@@ -15,38 +35,38 @@
     text-decoration: line-through;
 }
 
-.button {
+.list__button {
     width: 30px;
     height: 30px;
     color: #fff;
 }
 
-.button--done {
+.list__button--done {
     background-color: #137413;
     margin-right: 10px;
     border: 1px solid #137413;
     transition: 1s;
 }
 
-.button--done:hover {
+.list__button--done:hover {
     background-color: hsl(120, 72%, 35%);
 }
 
-.button--done:active {
+.list__button--done:active {
     background-color: hsl(120, 72%, 40%);
 }
 
-.button--remove {
+.list__button--remove {
     background-color: crimson;
     margin-left: 11px;
     border: 1px solid crimson;
     transition: 1s;
 }
 
-.button--remove:hover {
+.list__button--remove:hover {
     background-color: hsl(348, 83%, 55%);
 }
 
-.button--remove:active {
+.list__button--remove:active {
     background-color: hsl(348, 83%, 60%);
 }
