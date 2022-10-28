@@ -31,7 +31,7 @@
     display: none;
 }
 
-.list__item--done {
+.list__task--done {
     text-decoration: line-through;
 }
 
