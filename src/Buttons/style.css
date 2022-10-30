@@ -1,4 +1,4 @@
-.container__button {
+.buttons__button {
 
     background-color: #fff;
     padding: 10px;
@@ -9,25 +9,25 @@
 }
 
 @media (max-width: 767px) {
-    .container {
+    .buttons {
         display: grid;
         align-items: center;
     }
 }
 
-.container__button:hover {
+.buttons__button:hover {
     color: hsl(180, 100%, 40%);
 }
 
-.container__button:active {
+.buttons__button:active {
     color: hsl(180, 100%, 55%);
 }
 
-.container__button:disabled {
+.buttons__button:disabled {
     color: #ccc;
 }
 
-.container__button--hidden {
+.buttons__button--hidden {
     background-color: #fff;
     border: none;
     padding: 0px;
