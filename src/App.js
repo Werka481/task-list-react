@@ -14,10 +14,18 @@ const tasks = [
 
 
 function App() {
-  const [hideDone, setHideDone]  = useState(false);
-  
+  const [hideDone, setHideDone] = useState(false);
+  const [tasks, setTasks] = useState([
+    { id: 1, content: "zrobić zakupy", done: false },
+    { id: 2, content: "posprzątać dom", done: true },
+  ]);
+
   const toggleHideDone = () => {
-   setHideDone(hideDone => !hideDone);
+    setHideDone(hideDone => !hideDone);
+  };
+
+  const removeTask = (id) => {
+    setTasks(tasks => tasks.filter(task => task.id !== id))
   };
 
   return (
@@ -29,8 +37,13 @@ function App() {
       />
       <Section
         title="Lista zadań"
-        body={<Tasks tasks={tasks} hideDone={hideDone} />}
-        extraContent={<Buttons tasks={tasks} hideDone={hideDone} toggleHideDone={toggleHideDone} />}
+        body={<Tasks tasks={tasks} hideDone={hideDone} removeTask={removeTask} />}
+        extraContent={
+          <Buttons
+            tasks={tasks}
+            hideDone={hideDone}
+            toggleHideDone={toggleHideDone}
+          />}
       />
     </Container>
   )
