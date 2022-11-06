@@ -1,14 +1,15 @@
-# Task list
+# Task list in React
 
 ![share](public/taskshare.png)
-## Description
-
-This repository contains an application that creates a task list.
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Demo
 https://werka481.github.io/task-list-react/
+## Description
+
+The app allows you to add a to-do list. You can mark each task as done. You can also delete a task from the list. There is also a button in the application that hides or shows completed tasks. There is also a button responsible for completing all tasks at the same time. After all tasks are completed, the button becomes inactive. I invite you to watch the instructions.
+
+![instruction](public/task.list.gif)
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Technologies used:
 1. BEM
