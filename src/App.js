@@ -5,47 +5,14 @@ import Container from "./Container";
 import Header from "./Header";
 import Section from "./Section";
 import { useState } from "react";
+import { useTasks } from "./useTasks";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "zrobić zakupy", done: false },
-    { id: 2, content: "posprzątać dom", done: true },
-  ]);
+  const { tasks, removeTask, toggleTaskDone, markAllDone, addNewTask } = useTasks();
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
-  };
-
-  const removeTask = (id) => {
-    setTasks(tasks => tasks.filter(task => task.id !== id))
-  };
-
-  const toggleTaskDone = (id) => {
-    setTasks(tasks => tasks.map(task => task.id === id
-      ? { ...task, done: !task.done }
-      : task));
-  };
-
-  const markAllDone = () => {
-    setTasks(tasks => tasks.map(task => ({
-      ...task,
-      done: true
-    })))
-  };
-
-  const addNewTask = (newTaskContent) => {
-    if (newTaskContent === "") {
-      return null;
-    }
-
-    setTasks(tasks => [
-      ...tasks,
-      {
-        content: newTaskContent,
-        done: false,
-        id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1
-      }])
   };
 
   return (
