@@ -11,7 +11,7 @@
     display: grid;
     grid-template-rows: 35px;
     grid-template-columns: 1fr 14fr 1fr;
-    grid-row-gap: 12px;
+    grid-row-gap: 20px;
     padding: 10px;
     align-items: center;
     border-bottom: 1px solid #ccc;
@@ -36,6 +36,9 @@
 }
 
 .tasks__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 30px;
     height: 30px;
     color: #fff;
@@ -43,13 +46,13 @@
 
 .tasks__button--done {
     background-color: #137413;
-    margin-right: 10px;
     border: 1px solid #137413;
     transition: 1s;
 }
 
 .tasks__button--done:hover {
     background-color: hsl(120, 72%, 35%);
+    cursor: pointer;
 }
 
 .tasks__button--done:active {
@@ -57,14 +60,16 @@
 }
 
 .tasks__button--remove {
+    display: grid;
+    justify-self: end;
     background-color: crimson;
-    margin-left: 11px;
     border: 1px solid crimson;
     transition: 1s;
 }
 
 .tasks__button--remove:hover {
     background-color: hsl(348, 83%, 55%);
+    cursor: pointer;
 }
 
 .tasks__button--remove:active {

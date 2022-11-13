@@ -17,6 +17,7 @@
 
 .buttons__button:hover {
     color: hsl(180, 100%, 40%);
+    cursor: pointer;
 }
 
 .buttons__button:active {
@@ -25,6 +26,7 @@
 
 .buttons__button:disabled {
     color: #ccc;
+    cursor: not-allowed;
 }
 
 .buttons__button--hidden {
