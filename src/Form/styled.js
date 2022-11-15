@@ -1,4 +1,6 @@
-.form {
+import styled from "styled-components";
+
+export const StyledForm = styled.form`
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-column-gap: 10px;
@@ -7,32 +9,30 @@
     margin: 20px;
     margin-top: 0px;
     padding: 20px;
-}
 
-@media (max-width: 767px) {
-    .form {
+    @media (max-width: 767px) {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         grid-row-gap: 5px;
         justify-content: stretch;
-    }
-}
+    };
+`;
 
-.form__input {
+export const Input = styled.input`
     padding: 10px;
     max-width: 600px;
-}
+`;
 
-.form__button {
+export const Button = styled.button`
     padding: 10px;
     background-color: teal;
     border: 1px solid teal;
     color: #fff;
     transition: 1s;
-}
 
-.form__button:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-}
+    &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    };
+`;
