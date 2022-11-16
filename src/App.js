@@ -4,6 +4,7 @@ import Buttons from "./Buttons";
 import Container from "./Container";
 import Header from "./Header";
 import Section from "./Section";
+import GlobalStyles from "./GlobalStyles/globalStyles";
 import { useState } from "react";
 import { useTasks } from "./useTasks/useTasks";
 
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <Container>
+      <GlobalStyles />
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
