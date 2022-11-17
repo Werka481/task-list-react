@@ -7,12 +7,12 @@ https://werka481.github.io/task-list-react/
 
 The app allows you to add a to-do list. You can mark each task as done. You can also delete a task from the list. There is also a button in the application that hides or shows completed tasks. There is also a button responsible for completing all tasks at the same time. After all tasks are completed, the button becomes inactive. I invite you to watch the instructions.
 
-![instruction](public/task.list.gif)
+![instruction](public/tasklist.gif)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Technologies used:
-1. BEM
+1. Styled Components
 2. CSS Flex-box
 3. CSS Grid
 4. ES6+ features
