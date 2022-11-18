@@ -40,7 +40,7 @@ function App() {
             markAllDone={markAllDone}
           />}
       />
-    </Container>
+    </main>
   )
 };
 
