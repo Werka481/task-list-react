@@ -46,36 +46,36 @@ export const Button = styled.button`
     width: 30px;
     height: 30px;
     color: #fff;
+`;
 
-    ${({ done }) => done && css`
-        background-color: #137413;
-        border: 1px solid #137413;
-        transition: 1s;
+export const DoneButton = styled(Button)`
+    background-color: #137413;
+    border: 1px solid #137413;
+    transition: 1s;
 
-        &:hover {
-            background-color: hsl(120, 72%, 35%);
-            cursor: pointer;
-        };
+    &:hover {
+        background-color: hsl(120, 72%, 35%);
+        cursor: pointer;
+    };
 
-        &:active {
-            background-color: hsl(120, 72%, 40%);
-        };
-    `};
+    &:active {
+        background-color: hsl(120, 72%, 40%);
+    };
+`;
 
-    ${({ remove }) => remove && css`
-        display: grid;
-        justify-self: end;
-        background-color: crimson;
-        border: 1px solid crimson;
-        transition: 1s;
+export const RemoveButton = styled(Button)`
+    display: grid;
+    justify-self: end;
+    background-color: crimson;
+    border: 1px solid crimson;
+    transition: 1s;
 
-        &:hover {
-            background-color: hsl(348, 83%, 55%);
-            cursor: pointer;
-        };
+    &:hover {
+        background-color: hsl(348, 83%, 55%);
+        cursor: pointer;
+    };
 
-        &:active {
-            background-color: hsl(348, 83%, 60%);
-        };
-    `};
+    &:active {
+        background-color: hsl(348, 83%, 60%);
+    }; 
 `;

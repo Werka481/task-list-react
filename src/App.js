@@ -1,8 +1,7 @@
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
-import Container from "./Container";
-import Header from "./Header";
+import StyledHeader from "./Header/styled";
 import Section from "./Section";
 import GlobalStyles from "./GlobalStyles/globalStyles";
 import { useState } from "react";
@@ -17,9 +16,9 @@ function App() {
   };
 
   return (
-    <Container>
+    <main>
       <GlobalStyles />
-      <Header title="Lista zadań" />
+      <StyledHeader>Lista zadań</StyledHeader>
       <Section
         title="Dodaj nowe zadanie"
         body={<Form addNewTask={addNewTask} />}
