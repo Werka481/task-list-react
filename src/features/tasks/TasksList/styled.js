@@ -30,6 +30,10 @@ export const Item = styled.li`
         justify-content: center;
         word-break: break-word;
         padding: 15px;
+
+        ${({ hidden }) => hidden && css`
+            display: none;
+        `};    
     };
 `;
 
