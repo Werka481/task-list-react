@@ -16,6 +16,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 2. CSS Flex-box
 3. CSS Grid
 4. ES6+ features
+5. Markdown
+6. Immutability
+7. Webpack, npm
+8. Hooks: useState, useEffect, useRef
+9. Custom Hooks
+10. Redux
 
 ## Available Scripts
 
