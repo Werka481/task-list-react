@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
     @media (max-width: 767px) {
@@ -14,12 +14,6 @@ export const Button = styled.button`
     border: none;
     color: teal;
     transition: 1s;
-
-    ${({ hidden }) => hidden && css`
-        background-color: #fff;
-        border: none;
-        padding: 0px;
-    `};
 
     &:hover {
         color: hsl(180, 100%, 40%);
