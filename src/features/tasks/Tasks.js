@@ -4,6 +4,7 @@ import Buttons from "./Buttons";
 import StyledHeader from "../../common/Header/styled";
 import Section from "../../common/Section";
 import GlobalStyles from "../../globalStyles";
+import ExampleTasksButton from "./ExampleTasksButton";
 
 function Tasks() {
 
@@ -13,6 +14,7 @@ function Tasks() {
       <StyledHeader>Lista zadań</StyledHeader>
       <Section
         title="Dodaj nowe zadanie"
+        extraContent={<ExampleTasksButton />}
         body={<Form />}
       />
       <Section

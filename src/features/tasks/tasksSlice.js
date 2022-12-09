@@ -24,6 +24,16 @@ const tasksSlice = createSlice({
         markAllDone: ({ tasks }) => {
             tasks.forEach(task => task.done = true);
         },
+        fetchExampleTasks: (state) => {
+            state.loading = true;
+        },
+        fetchExampleTasksSuccess: (state, {payload: tasks}) => {
+            state.loading = false;
+            state.tasks = tasks;
+        },
+        fetchExampleTasksError: (state) => {
+            state.loading = false;
+        },
     },
 });
 
@@ -33,6 +43,9 @@ export const {
     toggleTaskDone,
     removeTask,
     markAllDone,
+    fetchExampleTasks,
+    fetchExampleTasksSuccess,
+    fetchExampleTasksError,
 } = tasksSlice.actions;
 
 const selectTasksState = state => state.tasks;
@@ -41,5 +54,6 @@ export const selectTasks = state => selectTasksState(state).tasks;
 export const selectHideDone = state => selectTasksState(state).hideDone;
 export const selectAreTasksEmpty = state => selectTasks(state).length === 0;
 export const selectAllTaskDone = state => selectTasks(state).every(({ done }) => done);
+export const selectLoadingStatus = state => selectTasksState(state).loading;
 
 export default tasksSlice.reducer;
