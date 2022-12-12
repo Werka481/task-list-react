@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const List = styled.ul`
@@ -82,4 +83,12 @@ export const RemoveButton = styled(Button)`
     &:active {
         background-color: hsl(348, 83%, 60%);
     }; 
+`;
+
+export const StyledNavLink = styled(NavLink)`
+    text-decoration: none;
+
+    &:visited {
+        color: blue;
+    };
 `;

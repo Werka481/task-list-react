@@ -1,16 +1,13 @@
 import Form from "./Form";
 import TasksList from "./TasksList";
 import Buttons from "./Buttons";
-import StyledHeader from "../../common/Header/styled";
-import Section from "../../common/Section";
-import GlobalStyles from "../../globalStyles";
+import StyledHeader from "../../../common/Header/styled";
+import Section from "../../../common/Section";
 import ExampleTasksButton from "./ExampleTasksButton";
 
-function Tasks() {
-
+function TasksPage() {
   return (
     <main>
-      <GlobalStyles />
       <StyledHeader>Lista zadań</StyledHeader>
       <Section
         title="Dodaj nowe zadanie"
@@ -28,4 +25,4 @@ function Tasks() {
   )
 };
 
-export default Tasks;
+export default TasksPage;
