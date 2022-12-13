@@ -6,5 +6,4 @@ export const Wrapper = styled.div`
     margin: 20px;
     margin-top: 0px;
     padding: 20px;
-    text-align: justify;
 `;
