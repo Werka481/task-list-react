@@ -19,11 +19,6 @@ export const StyledForm = styled.form`
     };
 `;
 
-export const Input = styled.input`
-    padding: 10px;
-    max-width: 600px;
-`;
-
 export const Button = styled.button`
     padding: 10px;
     background-color: teal;
