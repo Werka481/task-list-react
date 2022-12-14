@@ -5,9 +5,9 @@
 https://werka481.github.io/task-list-react/
 ## Description
 
-The app allows you to add a to-do list. You can mark each task as done. You can also delete a task from the list. There is also a button in the application that hides or shows completed tasks. There is also a button responsible for completing all tasks at the same time. After all tasks are completed, the button becomes inactive. I invite you to watch the instructions.
+The app allows you to add a to-do list. You can mark each task as done. You can also delete a task from the list. There is also a button in the application that hides or shows completed tasks. There is also a button responsible for completing all tasks at the same time. After all tasks are completed, the button becomes inactive. The application allows you to download sample tasks and save them in LocalStorage. In addition, there is a job search engine in the application that filters them. Added 'O autorze' subpage. After clicking on a task, we can see the details of that task. I invite you to watch the instructions.
 
-![instruction](public/tasklist.gif)
+![instruction](public/taskslist.gif)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -22,6 +22,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 8. Hooks: useState, useEffect, useRef
 9. Custom Hooks
 10. Redux
+11. Redux-Saga
+12. React-Router
+13. LocalStorage
 
 ## Available Scripts
 
