@@ -5,7 +5,8 @@ import StyledHeader from "../../../common/Header/styled";
 import Section from "../../../common/Section";
 import ExampleTasksButton from "./ExampleTasksButton";
 import Search from "./Search";
-import StyledContainer from "../../../common/Container/styled";
+import StyledContainer from "../../../common/StyledContainer";
+
 
 function TasksPage() {
   return (

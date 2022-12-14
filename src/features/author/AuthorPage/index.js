@@ -1,10 +1,11 @@
 import StyledHeader from "../../../common/Header/styled";
 import Section from "../../../common/Section";
+import StyledContainer from "../../../common/StyledContainer";
 import GlobalStyles from "../../../globalStyles";
 import { Wrapper } from "./styled";
 
 const Author = () => (
-    <main>
+    <StyledContainer>
         <GlobalStyles />
         <StyledHeader>O autorze</StyledHeader>
         <Section
@@ -40,7 +41,7 @@ const Author = () => (
                 </Wrapper>
             }
         />
-    </main>
+    </StyledContainer>
 );
 
 export default Author;
